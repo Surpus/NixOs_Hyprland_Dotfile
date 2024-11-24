@@ -63,6 +63,13 @@
       binPath = "/run/current-system/sw/bin/Hyprland";
     };
 
+    
+   programs.firefox = {
+    enable = true;
+    package = pkgs.firefox;
+    nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
+   };
+
   # Enable CUPS to print documents.
   # services.printing.enable = true;
 
